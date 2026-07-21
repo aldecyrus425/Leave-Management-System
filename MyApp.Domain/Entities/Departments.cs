@@ -15,5 +15,12 @@ namespace MyApp.Domain.Entities
 
         public virtual ICollection<Employees> Employees { get; private set; } = new List<Employees>();
 
+        protected Departments() { }
+
+        public Departments(string departmentName, string? description)
+        {
+            DepartmentName = departmentName;
+            Description = description;
+        }
     }
 }

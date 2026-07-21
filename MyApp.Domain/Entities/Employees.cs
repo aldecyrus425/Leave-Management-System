@@ -28,11 +28,29 @@ namespace MyApp.Domain.Entities
         public bool IsActive { get; private set; }
 
         public DateTime CreatedAt { get; private set; }
-        public DateTime UpdatedAt { get; private set; }
+        public DateTime? UpdatedAt { get; private set; }
 
         public virtual Departments Department { get; private set; } = null!;
         public virtual Positions Position { get; private set; } = null!;
 
         protected Employees() { }
+
+        public Employees(string employeeNumber, string firstName, string? middleName, string lastName, string email, string? phone, Guid departmentId, Guid positionId, string employmentType, string employmentStatus, DateOnly hireDate, DateOnly? regularizationDate, bool isActive)
+        {
+            EmployeeNumber = employeeNumber;
+            FirstName = firstName;
+            MiddleName = middleName;
+            LastName = lastName;
+            Email = email;
+            Phone = phone;
+            DepartmentId = departmentId;
+            PositionId = positionId;
+            EmploymentType = employmentType;
+            EmploymentStatus = employmentStatus;
+            HireDate = hireDate;
+            RegularizationDate = regularizationDate;
+            IsActive = isActive;
+            CreatedAt = DateTime.Now;
+        }
     }
 }

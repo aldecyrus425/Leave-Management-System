@@ -47,6 +47,19 @@
           }
         }
       },
+      "FluentValidation/12.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -56,6 +69,19 @@
         },
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
             "related": ".xml"
           }
         }
@@ -1599,6 +1625,22 @@
           }
         }
       },
+      "MyApp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "FluentValidation": "12.1.1",
+          "MediatR": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.18",
+          "MyApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyApp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyApp.Application.dll": {}
+        }
+      },
       "MyApp.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1650,6 +1692,21 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+    "FluentValidation/12.1.1": {
+      "sha512": "EPpkIe1yh1a0OXyC100oOA8WMbZvqUu5plwhvYcb7oSELfyUZzfxV48BLhvs3kKo4NwG7MGLNgy1RJiYtT8Dpw==",
+      "type": "package",
+      "path": "fluentvalidation/12.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.1.1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1666,6 +1723,24 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "MediatR/9.0.0": {
+      "sha512": "8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
+      "type": "package",
+      "path": "mediatr/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.9.0.0.nupkg.sha512",
+        "mediatr.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
@@ -4712,6 +4787,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "MyApp.Application/1.0.0": {
+      "type": "project",
+      "path": "../MyApp.Application/MyApp.Application.csproj",
+      "msbuildProject": "../MyApp.Application/MyApp.Application.csproj"
+    },
     "MyApp.Domain/1.0.0": {
       "type": "project",
       "path": "../MyApp.Domain/MyApp.Domain.csproj",
@@ -4725,6 +4805,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.18",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.18",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 9.0.18",
+      "MyApp.Application >= 1.0.0",
       "MyApp.Domain >= 1.0.0"
     ]
   },
@@ -4762,6 +4843,9 @@
           "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\admin\\source\\repos\\Leave-Management-System\\MyApp.Application\\MyApp.Application.csproj": {
+              "projectPath": "C:\\Users\\admin\\source\\repos\\Leave-Management-System\\MyApp.Application\\MyApp.Application.csproj"
+            },
             "C:\\Users\\admin\\source\\repos\\Leave-Management-System\\MyApp.Domain\\MyApp.Domain.csproj": {
               "projectPath": "C:\\Users\\admin\\source\\repos\\Leave-Management-System\\MyApp.Domain\\MyApp.Domain.csproj"
             }
