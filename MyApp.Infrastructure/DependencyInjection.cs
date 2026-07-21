@@ -16,7 +16,7 @@ namespace MyApp.Infrastructure
         {
             service.AddDbContext<ApplicationDBContext>(options =>
             {
-                options.UseSqlServer(configure.GetConnectionString("defaultconnection"));
+                options.UseSqlServer(configure.GetConnectionString("DefaultConnection"));
             });
             return service;
         }

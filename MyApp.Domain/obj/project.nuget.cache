@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "IQbTaB5/W7M=",
+  "dgSpecHash": "2DwrKIdxwlw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aldec\\source\\repos\\Leave-Management-System\\MyApp.Domain\\MyApp.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\admin\\source\\repos\\Leave-Management-System\\MyApp.Domain\\MyApp.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.16\\microsoft.windowsdesktop.app.ref.9.0.16.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.16\\microsoft.netcore.app.ref.9.0.16.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.16\\microsoft.aspnetcore.app.ref.9.0.16.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -8,10 +8,7 @@ namespace MyApp.Domain.Entities
 {
     public class WorkCalendar
     {
-        // Primary Key
         public Guid CalendarId { get; private set; }
-
-        // Calendar Details
         public DayOfWeek DayOfWeek { get; private set; }
         public bool IsWorkingDay { get; private set; }
 

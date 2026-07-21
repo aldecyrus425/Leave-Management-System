@@ -8,14 +8,9 @@ namespace MyApp.Domain.Entities
 {
     public class LeaveLedger
     {
-        // Primary Key
         public Guid LeaveLedgerId { get; private set; }
-
-        // Foreign Keys
         public Guid EmployeeId { get; private set; }
         public Guid LeaveTypeId { get; private set; }
-
-        // Transaction Details
         public string ReferenceType { get; private set; } = string.Empty;
         public Guid ReferenceId { get; private set; }
         public string TransactionType { get; private set; } = string.Empty;
@@ -25,8 +20,6 @@ namespace MyApp.Domain.Entities
         public DateTime TransactionDate { get; private set; }
         public string? Remarks { get; private set; }
         public string CreatedBy { get; private set; } = string.Empty;
-
-        // Navigation Properties
         public virtual Employees Employee { get; private set; } = null!;
         public virtual LeaveTypes LeaveType { get; private set; } = null!;
 

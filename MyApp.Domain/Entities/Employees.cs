@@ -10,7 +10,6 @@ namespace MyApp.Domain.Entities
     {
         public Guid EmployeeId { get; private set; }
 
-        // Employee Information
         public string EmployeeNumber { get; private set; } = string.Empty;
         public string FirstName { get; private set; } = string.Empty;
         public string? MiddleName { get; private set; }
@@ -18,11 +17,8 @@ namespace MyApp.Domain.Entities
         public string Email { get; private set; } = string.Empty;
         public string? Phone { get; private set; }
 
-        // Foreign Keys
         public Guid DepartmentId { get; private set; }
         public Guid PositionId { get; private set; }
-
-        // Employment
         public string EmploymentType { get; private set; } = string.Empty;
         public string EmploymentStatus { get; private set; } = string.Empty;
 
@@ -31,7 +27,6 @@ namespace MyApp.Domain.Entities
 
         public bool IsActive { get; private set; }
 
-        // Audit Fields
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
 

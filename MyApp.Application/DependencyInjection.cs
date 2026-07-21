@@ -9,7 +9,7 @@ namespace MyApp.Application
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddApplicationDI(this IServiceCollection service)
+        public static IServiceCollection AddApplicationsDI(this IServiceCollection service)
         {
             return service;
         }

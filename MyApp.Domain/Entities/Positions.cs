@@ -8,14 +8,10 @@ namespace MyApp.Domain.Entities
 {
     public class Positions
     {
-        // Primary Key
         public Guid PositionId { get; private set; }
-
-        // Properties
         public string PositionName { get; private set; } = string.Empty;
         public string? Description { get; private set; }
 
-        // Audit Fields
         public bool IsActive { get; private set; }
 
         public DateTime CreatedAt { get; private set; }
@@ -23,8 +19,6 @@ namespace MyApp.Domain.Entities
         public DateTime UpdatedAt { get; private set; }
 
         public virtual ICollection<Employees> Employees { get; private set; } = new List<Employees>();
-
-        // Required by EF Core
         protected Positions() { }
     }
 }

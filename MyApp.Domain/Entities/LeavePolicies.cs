@@ -8,13 +8,8 @@ namespace MyApp.Domain.Entities
 {
     public class LeavePolicies
     {
-        // Primary Key
         public Guid LeavePolicyId { get; private set; }
-
-        // Foreign Key
         public Guid LeaveTypeId { get; private set; }
-
-        // Policy
         public decimal AnnualCredits { get; private set; }
         public decimal MonthlyAccrualRate { get; private set; }
         public decimal MaximumCarryOver { get; private set; }
@@ -25,8 +20,6 @@ namespace MyApp.Domain.Entities
         public bool CashConvertible { get; private set; }
         public DateOnly EffectiveDate { get; private set; }
         public DateOnly? ExpirationDate { get; private set; }
-
-        // Navigation Property
         public virtual LeaveTypes LeaveType { get; private set; } = null!;
 
         protected LeavePolicies() { }
